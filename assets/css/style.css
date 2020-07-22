@@ -1,15 +1,5 @@
-div.game-board {
-    width: 80%;
-    margin: auto;
-}
-
-div.center {
-    display: block;
-    margin: auto;
-}
-
 div.row {
-    margin: auto;
+    max-width: fit-content;
 }
 
 div.col-2{
