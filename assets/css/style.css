@@ -1,0 +1,25 @@
+div.game-board {
+    width: 80%;
+    margin: auto;
+}
+
+div.center {
+    display: block;
+    margin: auto;
+}
+
+div.row {
+    margin: auto;
+}
+
+div.col-2{
+    padding: 2px;
+    max-width: none;
+    flex: 0;
+}
+
+div.col-2 > img {
+    width: 150px;
+    height: 150px;
+}
+
