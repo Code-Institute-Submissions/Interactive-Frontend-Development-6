@@ -1,6 +1,12 @@
 body {
     height: 100vh;
     display: flex;
+    border: 1px solid pink;
+    flex-direction: column;
+}
+h1 {
+    margin-top: .1%;
+    text-align: center;
 }
 /*
 div.row {
@@ -21,9 +27,11 @@ div.col-2 > img {
 */
 .game-board {
     margin: auto;
-    height: 640px;
-    width: 640px;
+    height: calc(100vh - 15%); /* Maxi game area on device -10%  So I can have a title and maybe a scoreboard... :)*/
+    width: calc(100vh - 15%);
     border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -36,4 +44,5 @@ div.col-2 > img {
     background: blue;
     height: 100%;
     width: 100%;
+    position: absolute;
 }
