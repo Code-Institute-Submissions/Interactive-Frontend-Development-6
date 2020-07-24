@@ -15,11 +15,12 @@ p {
 
 .game-board {
     margin: auto;
-    height: calc(100vh - 15%); /* Maxi game area on device -15%  So I can have a title and maybe a scoreboard... :)*/
-    width: calc(100vh - 15%);
+    height: 640px; /* Maxi game area on device -15%  So I can have a title and maybe a scoreboard... :)*/
+    width: 640px;
     border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
+    perspective: 1000px;
 }
 
 .card {
@@ -28,15 +29,28 @@ p {
     width: 20%;
     height: 25%;
     transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 1s;
 }
+
 .card-face, .card-backdrop{
     background: blue;
     height: 100%;
     width: 100%;
     position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-face {
+    transform: rotateY(180deg);
 }
 
 .card:active {
     transform: scale(.97);
     transition: transform .1s;
+}
+
+.card.turned {
+    transform: rotateY(180deg);
+    background: red;
 }
