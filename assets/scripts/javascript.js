@@ -2,9 +2,16 @@ const cards = document.querySelectorAll(".card");
 //load Sound SFX for cardturning.
 const turnSFX = document.getElementById("turnSFX");
 //console.log(turnSFX);
+
 let hasTurnedCard = false;
 let firstCard, secondCard;
 let lockCards = false;
+
+
+function newGame() {
+    //new game button
+    location.reload();
+}
 
 function turnSound() {
     //play that funky music white boy...
@@ -13,7 +20,8 @@ function turnSound() {
 }
 
 function turnCard() {
-    if (lockCards) {return;
+    if (lockCards) {
+        return;
     }
     if (this === firstCard) {
         return;
