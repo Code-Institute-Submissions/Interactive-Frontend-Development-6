@@ -11,8 +11,8 @@
   <body>
         <h1>Memory Game!</h1>
         <!-- Scoreboard -->
-        <p id="score">Score:</p>
         <button onclick="newGame()">New Game</button>
+        <p id="score">Score:</p>
     <div class="game-board">
           <div class="card" data-image="appaloosa">
             <img src="assets/pictures/appaloosa.jpg" class="card-face" alt="Appaloosa horse" />
@@ -97,6 +97,9 @@
     </div>
     <audio id="turnSFX">
         <source src="assets/sounds/horse-neigh.wav" type="audio/wav"/>
+    </audio>
+    <audio id="winningSound">
+        <source src="assets/sounds/fanfare.mp3" type="audio/mpeg"/>
     </audio>
     <script src="assets/scripts/javascript.js"></script>
   </body>   
