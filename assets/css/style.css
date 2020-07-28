@@ -2,31 +2,40 @@ body {
     margin:0;
     padding:0;
     display: flex;
+    background: #225205;
     border: 1px solid pink;
     flex-direction: column;
+    font-family: ranchers;
 }
 
 h1 {
-    margin-top: .01%;
     text-align: center;
-}
-p {
-    text-align: center;
-    margin-top: .1%;
+    color: #ffffff;
+    font-size: 70px;
 }
 
 button {
-
-    width: 100px;
-    height: 75px;
-    border-color: green;
-    border-width: 10px;
-    background: rgb(6, 207, 6);
-    border-radius: 50px;
+    width: 150px;
+    height: 100px;
+    border-color: #88A747;
+    border-width: 1px;
+    border-color: black;
+    background: #88A747;
+    border-radius: 50%;
     position: relative;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    margin-bottom: 15px;
+    font-size: 33px;
+    
+}
+
+p {
+    text-align: center;
+    color: #ffffff;
+    margin-top: .1%;
+    font-size: 50px;
 }
 
 .game-board {
@@ -50,7 +59,7 @@ button {
 }
 
 .card-face, .card-backdrop{
-    background: blue;
+    background: #e7e5e5;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -68,5 +77,4 @@ button {
 
 .card.turned {
     transform: rotateY(180deg);
-    background: red;
 }
