@@ -37,6 +37,18 @@ function playWinningSound () {
     winningSound.play();
 }
 
+function endOfGame() { 
+            let totalCards = cards.length;
+            let getAllTurnedCards = document.querySelectorAll('turned');
+            let turnedCards = getAllTurnedCards.length;
+            console.log(cards.length, getAllTurnedCards.length);
+            console.log("This sucks")
+            if(totalCards === turnedCards){
+            //play music when game is completed
+            playWinningSound();
+            }
+        }
+
 function turnCard() {
     if (lockCards) {
         return;
@@ -62,17 +74,6 @@ function turnCard() {
         /*playapplause();*/
         firstCard.removeEventListener('click', turnCard);
         secondCard.removeEventListener('click', turnCard);
-
-        function endOfGame() { 
-            let totalCards = cards.length;
-            let getAllTurnedCards = document.querySelectorAll('.turned');
-            let turnedCards = getAllTurnedCards.length;
-            console.log(cards.length, getAllTurnedCards.length);
-            if(totalCards === turnedCards){
-            //play music when game is completed
-            playWinningSound();
-            }
-        }
 
     } else {
         //nomatch, try again loser. - on score
