@@ -9,12 +9,8 @@ const applause = document.getElementById("applause");
 let hasTurnedCard = false;
 let firstCard, secondCard;
 let lockCards = false;
-/*let gamescore = 0;
-
-function totalScore () {
-    for (gamescore; gamescore < 100; gamescore+=10) { 
-    getElementById("score");  
-}*/
+let gameScore = 0;
+let scoreCard = document.getElementById("score");
 
 function newGame() {
     //new game button that reset the gameboard
@@ -27,7 +23,7 @@ function turnSound() {
     //console.log("Turn sound played.");
 }
 
-/*function playapplause () {
+/*function playApplause () {
     //play applause when 2 cards match
     applause.play();
 }*/
@@ -37,17 +33,22 @@ function playWinningSound () {
     winningSound.play();
 }
 
-function endOfGame() { 
-            let totalCards = cards.length;
-            let getAllTurnedCards = document.querySelectorAll('turned');
-            let turnedCards = getAllTurnedCards.length;
-            console.log(cards.length, getAllTurnedCards.length);
-            console.log("This sucks")
-            if(totalCards === turnedCards){
-            //play music when game is completed
-            playWinningSound();
-            }
-        }
+function endOfGame() {
+    console.log("endOfGame has been called and executed.");
+    let totalCards = cards.length;
+    let getAllTurnedCards = document.querySelectorAll('.card turned');
+    let turnedCards = getAllTurnedCards.length;
+    console.log(totalCards, turnedCards);
+    console.log("This sucks");
+    if(totalCards === turnedCards){
+        //play music when game is completed
+        console.log("Playing Endgame tone... IF-statement TRUE");
+        playWinningSound();
+    }else{
+        console.log("We have a matching pair but no candy... IF-statement FALSE");
+        applause.play();
+    }
+}
 
 function turnCard() {
     if (lockCards) {
@@ -71,9 +72,15 @@ function turnCard() {
     if (firstCard.dataset.image === secondCard.dataset.image) {
         //match!
         //Play an applause song
-        /*playapplause();*/
+        //Call endOfGame 
+        console.log("Calling endOfGame function now");
+        endOfGame();
         firstCard.removeEventListener('click', turnCard);
         secondCard.removeEventListener('click', turnCard);
+
+        // Global variable defined before
+        gameScore+=10;
+        scoreCard.innerHTML = gameScore;
 
     } else {
         //nomatch, try again loser. - on score
@@ -82,6 +89,10 @@ function turnCard() {
         setTimeout(() => {
             firstCard.classList.remove('turned');
             secondCard.classList.remove('turned');
+        
+        // Global variable defined before 
+        gameScore -=5;
+        scoreCard.innerHTML = gameScore;
         
         lockCards = false;
         }, 2000);
