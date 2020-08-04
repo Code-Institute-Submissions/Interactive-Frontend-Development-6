@@ -1,14 +1,16 @@
 const cards = document.querySelectorAll(".card");
 //load Sound SFX for cardturning.
 const turnSFX = document.getElementById("turnSFX");
-//console.log(turnSFX);
-const winningSound = document.getElementById("winningSound");
 //play sound when the game is finished
+const winningSound = document.getElementById("winningSound");
+//play applause sound when 2 cards match
 const applause = document.getElementById("applause");
 
 let hasTurnedCard = false;
 let firstCard, secondCard;
 let lockCards = false;
+
+//Score counter
 let gameScore = 0;
 let scoreCard = document.getElementById("score");
 
@@ -20,13 +22,7 @@ function newGame() {
 function turnSound() {
     //play that funky music white boy...
     turnSFX.play();
-    //console.log("Turn sound played.");
 }
-
-/*function playApplause () {
-    //play applause when 2 cards match
-    applause.play();
-}*/
 
 function playWinningSound () {
     //winning sound when game is finished
@@ -34,18 +30,13 @@ function playWinningSound () {
 }
 
 function endOfGame() {
-    console.log("endOfGame has been called and executed.");
     let totalCards = cards.length;
-    let getAllTurnedCards = document.querySelectorAll('.card turned');
+    let getAllTurnedCards = document.querySelectorAll('.turned');
     let turnedCards = getAllTurnedCards.length;
-    console.log(totalCards, turnedCards);
-    console.log("This sucks");
     if(totalCards === turnedCards){
         //play music when game is completed
-        console.log("Playing Endgame tone... IF-statement TRUE");
         playWinningSound();
     }else{
-        console.log("We have a matching pair but no candy... IF-statement FALSE");
         applause.play();
     }
 }
@@ -57,7 +48,6 @@ function turnCard() {
     if (this === firstCard) {
         return;
     }
-    //console.log("This card has turned: ",this);
     this.classList.toggle('turned');
     //Play soundeffect when turned. :)
     turnSound();
@@ -71,9 +61,7 @@ function turnCard() {
     
     if (firstCard.dataset.image === secondCard.dataset.image) {
         //match!
-        //Play an applause song
-        //Call endOfGame 
-        console.log("Calling endOfGame function now");
+        //Let's count cards and play a little tune...
         endOfGame();
         firstCard.removeEventListener('click', turnCard);
         secondCard.removeEventListener('click', turnCard);
@@ -84,7 +72,6 @@ function turnCard() {
 
     } else {
         //nomatch, try again loser. - on score
-        //play sad tone... :)
         lockCards = true;
         setTimeout(() => {
             firstCard.classList.remove('turned');
