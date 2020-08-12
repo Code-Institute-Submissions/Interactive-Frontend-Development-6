@@ -2,10 +2,11 @@ body {
     margin:0;
     padding:0;
     display: flex;
-    background: #225205;
+    background: #03197c;
     border: 1px solid pink;
     flex-direction: column;
     font-family: ranchers;
+    line-height: 1.1;
 }
 
 h1 {
@@ -19,7 +20,7 @@ button {
     height: 100px;
     border-width: 1px;
     border-color: black;
-    background: #88A747;
+    background: rgb(124, 174, 240);
     border-radius: 50%;
     position: relative;
     margin: 0 auto;
@@ -27,7 +28,6 @@ button {
     margin-bottom: 20px;
     text-align: center;
     font-size: 33px;
-    
 }
 
 p {
@@ -49,7 +49,7 @@ p {
 
 .card {
     position: relative;
-    border: 2px solid #225205;
+    border: 2px solid  #03197c;
     width: 20%;
     height: 25%;
     transform: scale(1);
@@ -58,7 +58,7 @@ p {
 }
 
 .card-face, .card-backdrop{
-    background: #88a747;
+    background: rgb(124, 174, 240);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -76,4 +76,12 @@ p {
 
 .card.turned {
     transform: rotateY(180deg);
+}
+
+/*----------------------------------Media Queries -----------------------------*/
+
+@media only screen and (max-width: 720px) {
+    body {
+        width: 200%;
+    }
 }
