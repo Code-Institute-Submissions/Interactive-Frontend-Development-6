@@ -3,7 +3,6 @@ body {
     padding:0;
     display: flex;
     background: #03197c;
-    border: 1px solid pink;
     flex-direction: column;
     font-family: ranchers;
     line-height: 1.1;
@@ -41,7 +40,6 @@ p {
     margin: 0 auto;
     height: 640px;
     width: 720px;
-    border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
