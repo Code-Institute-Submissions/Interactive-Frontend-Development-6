@@ -1,70 +1,145 @@
-# Horse memory game
+# Memory game
 
-This is a memory game written in HTML, CSS and JavaScript.
+This is a memory game written in HTML, CSS and JavaScript for everyone that feels a memory game is the game to play.
 
  
-## UX
- 
+## User Experience (UX)
 
-This is a memory game with 20 horse images (10 breeds) for any one that feels a memory game is the game to play (maybe you're interested in horses too).
-A sound of horse neigh is played when each card are flipped, a sound of applause is played when two cards are matched,
-and a sound of fanfare is played when the game is completed.
-Decision was made to have a no border around the cards. The color scheme green suits the nature in which horses lives.
+---
+I wanted to create a memory game that everyone can play, but of course now it is about horses so you might be more interested in that too. 
+Therefore it would be my next thing to create different pack of cards to choose from.
+In the game, I desided to put the "new game"-button right after the header (not beneath the game-board), and before the score-counter, just 
+to focuse everything to one place so that the gamer notice the "new game"-button. The score-counter is placed right above the game-board so 
+that the score-counter and the game-board are like one unit. The game-board is 5x4 rows, and I decided to have 5 cards in every row since that 
+centered the game nicely on the screen. 
 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+- ### User stories
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+    - **First Time Gamer Goals**   
+        1. As a First Time Gamer, I want to be able to play the game so that my abstinence will be gone  
+        2. As a First Time Gamer, I want to get some feedback while I play the game  
+        3. As a First Time Gamer, I want to be able to start a new game if i perform terribly bad or have memory enough to win the game
+        4. As a First Time Gamer, I want to play the game on my mobile while on the go
 
-- 
+    - **Returning Gamer Goals**   
+        1. As a Returning Gamer, I want to see new pictures once in a while   
+        2. As a Returning Gamer, I want to learn the name of the horses
 
-The wireframe is included as a pdf file in the project itself (in an separate directory called wireframe).
+    - **Frequent Gamer Goals**    
+        1. As a Frequent Gamer, I want to have different pack of cards to choose from.   
+        2. As a Frequent Gamer, I want to be able to change color scheme
+
+- ### Design 
+    - **Color Scheme**   
+    Decision was made to have the body's background set to darkblue and a small darkblue border around the cards to separate them. 
+    The color scheme blue suits the nature in which horses lives and is also a color that will stimulate clear thought and will calm the mind 
+    and aid concentration, ([see colour affects here](http://www.colour-affects.co.uk/psychological-properties-of-colours)), which I
+    hope will help in the game. 
+    The cards has a lighter blue background to stand out from the body background. The blue color is nice to the goldish horseshoe on 
+    the back of the cards. 
+    The "new game" button has black text instead of white (as the rest of the page) and a lightblue background to stand out from the body 
+    color. The "new game"-button and the main game has the same light blue color because they are both involved in the game. 
+    First I wanted to use the same color scheme (green) as in my first milestone project, as you can see in my wireframe, but I obviously 
+    changed my mind. The darkgreen background would have been nice to the horseshoes's green holes - would have looked like the horseshoe 
+    is perforated. 
+
+    - **Typography**    
+    The Ranchers font is the main font used with the Bootstraps default as the fallback if the font isn't being imported into the 
+    site correctly. I thought the Ranchers font suits the horse-theme since a rancher is a person who owns or operates a ranch. Also 
+    the font looks kinda playful to me, which the game should be.
+
+    - **Imagery**   
+    This is a memory game with 20 horse images (10 breeds).
+    
+    - **Interactivity**   
+    A sound of horse neigh is played when each card is flipped, a sound of applause is played when two cards match,
+    and a sound of fanfare is played when the game is completed.
+
+- ### Wireframe
+    The wireframe is included as a pdf file in the project itself (in a separate directory called wireframe).
 
 ## Features
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
+ --- 
+
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
 - Game-board: consists of 20 cards with 10 different horse breeds
 
-- Score-bar: The player gain 10 scores when two cards are matched but loses 5 scores if it's a wrong match.
+- Score-counter: The player gain 10 scores when two cards match but loses 5 scores if it's a wrong match.
 
 - "New game" button: Creates a new game
 
 ### Features Left to Implement
 - Add breed names on each card to learn the breeds
+- Add different pack of cards for variation
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+---
 
 - HTML
 - CSS
 - JavaScript - The project uses JavaScript for interactivity and for the gameboard to flip the cards
+- [Jasmine](https://jasmine.github.io/) - For testing some of the Javascript code*
+- [Google fonts](https://fonts.google.com/) - to use the Ranchers font 
+- [Figma](https://www.figma.com/) - to create the wireframe
+- [Bootstrap](https://getbootstrap.com/) - only to reset default properties of elements.
+- Git - was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- GitHub - is used to store the projects code after being pushed from Git.
+
+*Unfortunately I couldn't think of the Jasmine code to test my JavaScript code. So I've only started the Jasmine testing.
+
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+---
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+### Testing User Stories from User Experience (UX) Section
+**First Time Gamer Goals**    
+1. As a First Time Gamer, I want to be able to play the game so that my abstinence will be gone    
+    i. The cards do flip when clicked    
+    ii. when two cards match the cards stay flipped and the gamer gain scores (+10).    
+    iii. When two cards don't match the cards flips back and the gamer loses scores (-5).
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+2. As a First Time Gamer, I want to get some feedback while I play the game   
+    i. When the a card is flipped a sound of horse neigh is played.    
+    ii. When two cards match a sound of applause is played.    
+    iii. When the game is completed a sound of fanfare is played.    
+    iiii. The gamer will gain 10 scores or lose 5 scores depending on a match or no match of the cards.
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+3. As a First Time Gamer, I want to be able to start a new game if i perform terribly bad or have memory enough to win the game    
+    i. Sure, the "New Game" button, when clicked, reload the webpage and creates a new game (no cards flipped) whenever the gamer wants to. 
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+4. As a First Time Gamer, I want to play the game on my mobile while on the go   
+    i. The memory game can be played on mobile phone since the webpage is resizable. 
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+The Returning Gamer Goals and Frequent Gamer Goals are unfortunately not happening. This is something I would like to work on
+ if I had more time.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+**(Returning Gamer Goals**   
+1. As a Returning Gamer, I want to see new pictures once in a while   
+2. As a Returning Gamer, I want to learn the name of the horses
+
+**Frequent Gamer Goals**    
+1. As a Frequent Gamer, I want to have different pack of cards to choose from.   
+2. As a Frequent Gamer, I want to be able to change color scheme)
+
+### Validation 
+
+* The code have been validated in a [HTML validator](https://validator.w3.org/#validate_by_input), [CSS validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+    and [JavaScript validator](https://jshint.com/) respectively.
+
+* Different web-browsers (Opera, Firefox, Microsoft Edge, Chrome) and Samsung galaxy 9 have been used to check the website's layout and that 
+    the site works well on different devices and screensizes. Where needed I used media query to fix any responsiveness issues. My friend 
+    has played the game on mobile phone (Huawei p smart pro). 
+    
+### Known bugs
+* The cards flip a little bit to fast sometimes on mobile. The neight-sound doesn't
+    sound sometimes on the second card depending on how fast you click. 
 
 ## Deployment
+
+---
 
 ### <ins>The project was deployed to GitHub Pages using the following steps:</ins>
 
@@ -128,31 +203,35 @@ If this section grows too long, you may want to split it off into a separate fil
 
 6. Press "Enter" to create your local clone. 
 
-## Expanding on my project
+### <ins>Expanding on my project</ins>
 
 Is not allowed until I've finished the course at Code Institute. I'll let you know when.
 
 ## Credits
 
+---
+
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
-[Horse neigh when turning the cards](https://freesound.org/people/GoodListener/sounds/322450/)
+- The sound for interactivity was copied from:   
+    [Horse neigh when turning the cards](https://freesound.org/people/GoodListener/sounds/322450/)
 
-[Fanfare when finishing the game](https://freesound.org/people/joepayne/sounds/413203/)
+    [Applause when 2 cards match](https://freesound.org/people/xtrgamr/sounds/241132/)
 
-[Picture of the cards' backdrop](https://cdn.pixabay.com/photo/2019/03/14/04/38/graphic-4054233_960_720.png)
+    [Fanfare when completing the game](https://freesound.org/people/joepayne/sounds/413203/)
 
-[Javascript code for soundeffects](https://javascript-tutor.net/index.php/playing-music-using-javascript/)
+- I found inspiration from/to:
 
-[Javascript tutorial for gamelogic](https://www.youtube.com/watch?v=ZniVgo8U7ek)
+    [Javascript code for soundeffects](https://javascript-tutor.net/index.php/playing-music-using-javascript/)
 
-[How to create a "new game" button that reset the gameboard](https://www.youtube.com/watch?v=Azl6WzYuvgM)
+    [Javascript tutorial for gamelogic](https://www.youtube.com/watch?v=ZniVgo8U7ek)
+
+    [How to create a "new game" button that reset the gameboard](https://www.youtube.com/watch?v=Azl6WzYuvgM)
 
 ### Media
-The photos used in this site were obtained from ...
+The photos used in this site were obtained from:
 - [Appaloosa](https://horseislove.com/wp-content/uploads/2020/03/appaloosa-horse-lifespan.jpg)
 - [Arab horse](https://i.pinimg.com/originals/de/e6/da/dee6da6e062a91372600d03d2f78cfdd.jpg)
-- [Ardennes horse](https://lh3.googleusercontent.com/proxy/xNWCwt0Qs7gKn8WcvsGNe7294nQCFBO1KNZ6wr_eFsPVCFi8rAZQtsZbSF0YJC1Q45GTs-zygAKZgq00jAy_muHkoIdSzc0El_a4hxHFrwlf1CJzTi6c_YsBRxUuvzp9pA4IWOBlXvbS1sGMsuCO)
+- [Ardennes horse](https://lh3.googleusercontent.com/proxy/QJiEe5YiR0010hodBtOkGUpjGpkor56pgjNubvgNDw99QN1Pzv7sTOnI3Opu4S2HHOSCa5C_ZPid7fO1N5f0a2NbzEpN6CSUftDGBpJ243ALMlsxeLjXL373hsrliok38ylGy_v5uE2KzPuR5YzT)
 - [Clydesdale](https://img.point.pet/images/clydesdale-horses-in-full-tack-157293408-582dbf7b5f9b58d5b14b3ed1.jpg)
 - [English thoroughbred](https://www.hippson.se/cldocpart/246637.jpg)
 - [Fjord horse](https://cdn2.cdnme.se/4568077/9-3/askaspanar_5a43ee829606ee12929154ea.jpg)
@@ -163,5 +242,9 @@ The photos used in this site were obtained from ...
 - [Horseshoe](https://cdn.pixabay.com/photo/2019/03/14/04/38/graphic-4054233_960_720.png)
 
 ### Acknowledgements
+
+- Tutors at Code Institute for their support.
+
+- My long-distance boyfriend for his support.
 
 - I received inspiration for this project from my mentor and my own interest horses.
