@@ -4,7 +4,7 @@ body {
     display: flex;
     background: #03197c;
     flex-direction: column;
-    font-family: ranchers;
+    font-family: 'ranchers', cursive;
     line-height: 1.1;
 }
 
@@ -12,6 +12,10 @@ h1 {
     text-align: center;
     color: #ffffff;
     font-size: 70px;
+}
+
+.buttons {
+    margin: auto;
 }
 
 button {
@@ -35,6 +39,24 @@ p {
     margin-top: .1%;
     font-size: 50px;
 }
+
+/*---------------------------------Modal -----------------*/
+
+.modal-title {
+    font-size: 50px;
+}
+
+.modal-body p {
+    font-size: 25px;
+    color: black;
+    font-family: 'roboto', sans-serif;
+}
+
+.close {
+    font-size: 30px;
+}
+
+/*------------------------------Game-board -------------------*/
 
 .game-board {
     margin: 0 auto;
