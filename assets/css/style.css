@@ -4,7 +4,7 @@ body {
     display: flex;
     background: #03197c;
     flex-direction: column;
-    font-family: 'ranchers', cursive;
+    font-family: 'ranchers', 'roboto';
     line-height: 1.1;
 }
 
