@@ -1,2 +1,0 @@
-TurnCard = function () {}
-GameScore = function () {}
