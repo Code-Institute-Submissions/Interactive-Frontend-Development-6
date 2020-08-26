@@ -6,12 +6,13 @@ This is a memory game written in HTML, CSS and JavaScript for everyone that feel
 ## User Experience (UX)
 
 ---
+
 I wanted to create a memory game that everyone can play, but of course now it is about horses so you might be more interested in that too. 
 Therefore it would be my next thing to create different pack of cards to choose from.
-In the game, I desided to put the "new game"-button right after the header (not beneath the game-board), and before the score-counter, just 
-to focuse everything to one place so that the gamer notice the "new game"-button. The score-counter is placed right above the game-board so 
-that the score-counter and the game-board are like one unit. The game-board is 5x4 rows, and I decided to have 5 cards in every row since that 
-centered the game nicely on the screen. 
+In the game, I desided to put the "new game"-button and "new game" button right after the header (not beneath the game-board), and before the score-counter, just 
+to focuse everything to one place so that the gamer notice the "new game"-button and "game rules" button. The score-counter is placed right above 
+the game-board so that the score-counter and the game-board are like one unit. The game-board is 5x4 rows, and I decided to have 5 cards in 
+every row since that centered the game nicely on the screen. 
 
 - ### User stories
 
@@ -37,14 +38,14 @@ centered the game nicely on the screen.
     hope will help in the game. 
     The cards has a lighter blue background to stand out from the body background. The blue color is nice to the goldish horseshoe on 
     the back of the cards. 
-    The "new game" button has black text instead of white (as the rest of the page) and a lightblue background to stand out from the body 
-    color. The "new game"-button and the main game has the same light blue color because they are both involved in the game. 
+    The "new game" button and "game rules" button has black text instead of white (as the rest of the page) and a lightblue background to stand out from the body 
+    color. The "new game"-button, the "game rules"-button and the main game has the same light blue color because they are all involved in the game. 
     First I wanted to use the same color scheme (green) as in my first milestone project, as you can see in my wireframe, but I obviously 
     changed my mind. The darkgreen background would have been nice to the horseshoes's green holes - would have looked like the horseshoe 
     is perforated. 
 
     - **Typography**    
-    The Ranchers font is the main font used with the Bootstraps default as the fallback if the font isn't being imported into the 
+    The Ranchers font is the main font used with the Roboto font as the fallback if the font isn't being imported into the 
     site correctly. I thought the Ranchers font suits the horse-theme since a rancher is a person who owns or operates a ranch. Also 
     the font looks kinda playful to me, which the game should be.
 
@@ -62,16 +63,16 @@ centered the game nicely on the screen.
  
  --- 
 
-### Existing Features
-- Game-board: consists of 20 cards with 10 different horse breeds
+- ### Existing Features
+    - Game-board: consists of 20 cards with 10 different horse breeds
 
-- Score-counter: The player gain 10 scores when two cards match but loses 5 scores if it's a wrong match.
+    - Score-counter: The player gain 10 points when two cards match but loses 5 points if it's a wrong match.
 
-- "New game" button: Creates a new game
+    - "New game" button: Creates a new game
 
-### Features Left to Implement
-- Add breed names on each card to learn the breeds
-- Add different pack of cards for variation
+- ### Features Left to Implement
+    - Add breed names on each card to learn the breeds
+    - Add different pack of cards to choose from for variation
 
 ## Technologies Used
 
@@ -80,15 +81,12 @@ centered the game nicely on the screen.
 - HTML
 - CSS
 - JavaScript - The project uses JavaScript for interactivity and for the gameboard to flip the cards
-- [Jasmine](https://jasmine.github.io/) - For testing some of the Javascript code*
+- [Jasmine](https://jasmine.github.io/) - For testing the score counter of the Javascript code
 - [Google fonts](https://fonts.google.com/) - to use the Ranchers font 
 - [Figma](https://www.figma.com/) - to create the wireframe
 - [Bootstrap](https://getbootstrap.com/) - only to reset default properties of elements.
-- Git - was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-- GitHub - is used to store the projects code after being pushed from Git.
-
-*Unfortunately I couldn't think of the Jasmine code to test my JavaScript code. So I've only started the Jasmine testing.
-
+- [Git](https://git-scm.com/) - was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- [GitHub](https://github.com/) - is used to store the projects code after being pushed from Git.
 
 ## Testing
 
@@ -124,14 +122,17 @@ The Returning Gamer Goals and Frequent Gamer Goals are unfortunately not happeni
 1. As a Frequent Gamer, I want to have different pack of cards to choose from.   
 2. As a Frequent Gamer, I want to be able to change color scheme)
 
+### Further testing
+* Most testing was done throughout development, most of which was manual tests. Jasmine was used to automatically test the score counter. 
+
+* Different web-browsers (Opera, Firefox, Microsoft Edge, Chrome) and Samsung galaxy 9 have been used to check the website's layout and that 
+    the site works well on different devices and screensizes. Where needed I used media query to fix any responsiveness issues.
+* My friends have played the game on mobile phones with Android (Huawei p smart pro and LG g7 thinQ). 
+
 ### Validation 
 
 * The code have been validated in a [HTML validator](https://validator.w3.org/#validate_by_input), [CSS validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
     and [JavaScript validator](https://jshint.com/) respectively.
-
-* Different web-browsers (Opera, Firefox, Microsoft Edge, Chrome) and Samsung galaxy 9 have been used to check the website's layout and that 
-    the site works well on different devices and screensizes. Where needed I used media query to fix any responsiveness issues. My friend 
-    has played the game on mobile phone (Huawei p smart pro). 
     
 ### Known bugs
 * The cards flip a little bit to fast sometimes on mobile. The neight-sound doesn't
@@ -143,7 +144,7 @@ The Returning Gamer Goals and Frequent Gamer Goals are unfortunately not happeni
 
 ### <ins>The project was deployed to GitHub Pages using the following steps:</ins>
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/cirruselli/User-Centric-Frontend-Development-Milestone-Project).
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/cirruselli/Interactive-Frontend-Development).
 
 2. At the top of the repository, locate the "Settings" button on the menu.
 
@@ -159,7 +160,7 @@ The Returning Gamer Goals and Frequent Gamer Goals are unfortunately not happeni
 
 8. The page will automatically refresh.
 
-9. Scroll back down through the page to locate the now published [site link](https://cirruselli.github.io/User-Centric-Frontend-Development-Milestone-Project/) in the "GitHub Pages" section. 
+9. Scroll back down through the page to locate the now published [site link] in the "GitHub Pages" section. 
 
 ### <ins>Cloning the Repository using the command line:</ins>
 
@@ -231,7 +232,7 @@ Is not allowed until I've finished the course at Code Institute. I'll let you kn
 The photos used in this site were obtained from:
 - [Appaloosa](https://horseislove.com/wp-content/uploads/2020/03/appaloosa-horse-lifespan.jpg)
 - [Arab horse](https://i.pinimg.com/originals/de/e6/da/dee6da6e062a91372600d03d2f78cfdd.jpg)
-- [Ardennes horse](https://lh3.googleusercontent.com/proxy/QJiEe5YiR0010hodBtOkGUpjGpkor56pgjNubvgNDw99QN1Pzv7sTOnI3Opu4S2HHOSCa5C_ZPid7fO1N5f0a2NbzEpN6CSUftDGBpJ243ALMlsxeLjXL373hsrliok38ylGy_v5uE2KzPuR5YzT)
+- [Ardennes horse](http://www.djupedalen.se/3/245/grevagarden-190502-03-ardenner/files/19hpkall_attack.jpg)
 - [Clydesdale](https://img.point.pet/images/clydesdale-horses-in-full-tack-157293408-582dbf7b5f9b58d5b14b3ed1.jpg)
 - [English thoroughbred](https://www.hippson.se/cldocpart/246637.jpg)
 - [Fjord horse](https://cdn2.cdnme.se/4568077/9-3/askaspanar_5a43ee829606ee12929154ea.jpg)
@@ -244,6 +245,8 @@ The photos used in this site were obtained from:
 ### Acknowledgements
 
 - Tutors at Code Institute for their support.
+
+- My mentor for his support and ideas. 
 
 - My long-distance boyfriend for his support.
 
