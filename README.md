@@ -5,8 +5,6 @@ This is a memory game written in HTML, CSS and JavaScript for everyone that feel
  
 ## User Experience (UX)
 
----
-
 I wanted to create a memory game that everyone can play, but of course now it is about horses so you might be more interested in that too. 
 Therefore it would be my next thing to create different pack of cards to choose from.
 In the game, I desided to put the "new game"-button and "new game" button right after the header (not beneath the game-board), and before the score-counter, just 
@@ -60,8 +58,6 @@ every row since that centered the game nicely on the screen.
     The wireframe is included as a pdf file in the project itself (in a separate directory called wireframe).
 
 ## Features
- 
- --- 
 
 - ### Existing Features
     - Game-board: consists of 20 cards with 10 different horse breeds
@@ -76,8 +72,6 @@ every row since that centered the game nicely on the screen.
 
 ## Technologies Used
 
----
-
 - HTML
 - CSS
 - JavaScript - The project uses JavaScript for interactivity and for the gameboard to flip the cards
@@ -89,8 +83,6 @@ every row since that centered the game nicely on the screen.
 - [GitHub](https://github.com/) - is used to store the projects code after being pushed from Git.
 
 ## Testing
-
----
 
 ### Testing User Stories from User Experience (UX) Section
 **First Time Gamer Goals**    
@@ -140,8 +132,6 @@ The Returning Gamer Goals and Frequent Gamer Goals are unfortunately not happeni
 
 ## Deployment
 
----
-
 ### <ins>The project was deployed to GitHub Pages using the following steps:</ins>
 
 1. Log in to GitHub and locate your [GitHub Repository](https://github.com/cirruselli/Interactive-Frontend-Development).
@@ -155,8 +145,6 @@ The Returning Gamer Goals and Frequent Gamer Goals are unfortunately not happeni
 5. Press save. 
 
 ## Configuring a publishing source for GitHub Pages
-
----
 
 ### <ins>Default source settings for repositories without the username naming scheme</ins>
 
@@ -241,13 +229,9 @@ To publish your site's source files from a /docs folder on your master branch, y
 
 ## Expanding on my project
 
----
-
 Is not allowed until I've finished the course at Code Institute. I'll let you know when.
 
 ## Credits
-
----
 
 ### Content
 - The sound for interactivity was copied from:   
