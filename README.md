@@ -144,29 +144,64 @@ The Returning Gamer Goals and Frequent Gamer Goals are unfortunately not happeni
 
 ### <ins>The project was deployed to GitHub Pages using the following steps:</ins>
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/cirruselli/Interactive-Frontend-Development).
+1. Log in to GitHub and locate your [GitHub Repository](https://github.com/cirruselli/Interactive-Frontend-Development).
 
 2. At the top of the repository, locate the "Settings" button on the menu.
 
 3. Scroll down the Settings page until you locate the "GitHub Pages" section.
 
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
+4. Under "Source", click the dropdown called "None" or "Branch" and select "Master Branch".
 
-5. The page will automatically refresh.
+5. Press save. 
 
-6. Scroll back down through the page to "Custom Domain" and choose the link already given as example.
+## Configuring a publishing source for GitHub Pages
 
-7. Press save.
+---
 
-8. The page will automatically refresh.
+### <ins>Default source settings for repositories without the username naming scheme</ins>
 
-9. Scroll back down through the page to locate the now published [site link] in the "GitHub Pages" section. 
+The default settings for publishing your site's source files depend on your site type and the branches you have in your site repository. 
+If your site repository doesn't have a master or gh-pages branch, your GitHub Pages publishing source is set to None and your site is not published. 
+After you've created either a master or gh-pages branch, you can set one as your publishing source so that your site will be published. 
+If you fork or upload your site repository with only a master or gh-pages branch, your site's source setting will automatically be enabled for that branch.
+
+### <ins>Enabling GitHub Pages to publish your site from master or gh-pages</ins>
+
+To select master or gh-pages as your publishing source, you must have the branch present in your repository. If you don't have a master or gh-pages branch, you can create them and then return to source settings to change your publishing source.
+
+1. On GitHub Enterprise, navigate to your GitHub Pages site's repository.
+
+2. Under your repository name, click "Settings". 
+
+3. Use the Select source drop-down menu to select master or gh-pages as your GitHub Pages publishing source.
+
+4. Click "Save".
+
+### <ins>Publishing your GitHub Pages site from a /docs folder on your master branch</ins>
+
+To publish your site's source files from a /docs folder on your master branch, you must have a master branch and your repository must:
+
+- have a /docs folder in the root of the repository
+
+- not follow the repository naming scheme \<username>\.[hostname] or \<orgname>\.[hostname]
+
+1. On GitHub Enterprise, navigate to your GitHub Pages site's repository.
+
+2. Create a folder in the root of your repository on the master branch called /docs.
+
+3. Under your repository name, click "Settings".
+
+4. Use the Select source drop-down menu to select master branch /docs folder as your GitHub Pages publishing source.
+
+5. Click "Save". 
+
+## Cloning a repository
 
 ### <ins>Cloning the Repository using the command line:</ins>
 
 1. Log in to GitHub and navigate to the main page of the repository.
 
-2. Under the repository name, click "Clone or download".
+2. Above the list of files, click the button "Code".
 
 3. To clone the repository using HTTPS, under "Clone with HTTPS", click the symbol after the link address. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the symbol after the link address.
 
@@ -182,9 +217,9 @@ The Returning Gamer Goals and Frequent Gamer Goals are unfortunately not happeni
 
 1. Log in to GitHub and naviate to the main page of the repository.
 
-2. Under the repository name, click "Clone or download".
+2. Above the list of files, click the button "Code".
 
-3. To clone your repository in GitHub Desktop, under "Clone with HTTPS", click Open in Desktop.
+3. Click "Open with GitHub Desktop" to clone the repository with GitHub Desktop.
 
 4. Follow the prompts in GitHub Desktop to complete the clone.
 
@@ -204,7 +239,9 @@ The Returning Gamer Goals and Frequent Gamer Goals are unfortunately not happeni
 
 6. Press "Enter" to create your local clone. 
 
-### <ins>Expanding on my project</ins>
+## Expanding on my project
+
+---
 
 Is not allowed until I've finished the course at Code Institute. I'll let you know when.
 
